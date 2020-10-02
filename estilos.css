@@ -125,13 +125,6 @@ nav ul li a:hover {
 } 
 
 
-.espaciado {
-    background-color: black;
-    width: 100%;
-    height: 50px;
-    border-top: 4px solid #ED7D3A;
-}
-
 .eslogan {
     display: flex;
     align-items: center;
@@ -326,4 +319,17 @@ footer {
     color: #ED7D3A;
     text-align: center;
     margin: 5rem;
+}
+
+
+@media (max-width: 678px) {
+    header nav {
+        display: none;
+    }
+    header h1 a {
+        font-size: 62px;
+    }
+    header span {
+        font-size: 20px;
+    }
 }
