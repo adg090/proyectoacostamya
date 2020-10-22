@@ -38,7 +38,7 @@ h3 {
 }
 
 .index-container {
-    border-top: 60px solid black;
+    border-top: 60px solid#202020;
        
 }
 
@@ -47,6 +47,10 @@ header {
     border-bottom: 5px solid #ED7D3A;
 }
 
+header .open,
+header .close {
+    display: none;
+}
 /* ---------------------- INDEX ------------------------ */
 
 
@@ -64,13 +68,11 @@ header h1 a {
 }
 
 .logo {
-    display: flex;
-    justify-content: space-between;
     width: 80%;
     margin: auto;
     padding: 3rem;
     padding-top: 5rem;
-    align-items: center;
+    
             
 }
 
@@ -103,6 +105,13 @@ header h1 {
     line-height: 95%;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
 nav ul li a {
     text-decoration: none;
     color: black;
@@ -129,7 +138,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: #202020;
     opacity: 0.6;
 }
 
@@ -206,7 +215,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: #202020;
     opacity: 0.6;
 }
 
@@ -256,7 +265,7 @@ nav ul li a:hover {
 
 .imagenes ul li :hover {
     transform: scale(1.05);
-    border: 1px solid black
+    border: 1px solid #202020
 }
 
 
@@ -315,21 +324,124 @@ form textarea {
     margin-right: 10px;
 }
 
+/* ------------------ FOOTER ------------------- */
+
 footer {
-    color: #ED7D3A;
-    text-align: center;
-    margin: 5rem;
+    background-color: #202020;
+    color: white;
+    padding: 60px;
+}
+
+footer h2 {
+    font-size: 30px;
+}
+
+.contenedor-one {
+    display: flex;
+    width: 80%;
+    align-content: center;
+    justify-content: space-between;
+    margin: auto;
+    color: #c7c7c7;
+    
+}
+
+.colum1 p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.colum2 ul {
+    list-style: none;
+    font-size: 15px;
+}
+
+.colum2 ul li {
+    margin-top: 15px;
+}
+
+.colum2 ul li a{
+    color: #c7c7c7;
+}
+
+.colum3 ul {
+    list-style: none;
+    font-size: 15px;
+}
+
+.colum3 ul li {
+    margin-top: 15px;
+}
+
+.colum3 ul li a{
+    color: #c7c7c7;
+}
+
+ 
+.contenedor-two {
+    width: 80%;
+    margin: auto;
+    color: #c7c7c7;
+}
+
+.derechos {
+    margin-top: 60px;   
+}
+
+.derechos p {
+    text-align: right;
 }
 
 
 @media (max-width: 678px) {
-    header nav {
+    header nav ul {
         display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 1;
+    }
+    header .open {
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        padding: 1rem;
+        padding-top: 4rem;
+        align-items: center;
+    }
+    #nav:target {
+        display: block;
     }
     header h1 a {
-        font-size: 62px;
+        font-size: 53px;
     }
     header span {
+        font-size: 17px;
+    }
+    .contenedor-one {
+        flex-direction: column;
+    }
+    footer h2 {
         font-size: 20px;
+    }
+    .colum1 p {
+        font-size: 13px;
+    }
+    .colum2 ul li a {
+        font-size: 13px;
+    }
+    .colum3 ul li a {
+        font-size: 13px;
+    }
+    .derechos p {
+        font-size: 13px;
     }
 }

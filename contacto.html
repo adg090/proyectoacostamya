@@ -6,7 +6,7 @@
     <meta name= "description" content="Comunicate con Acosta Muebleria & Aberturas o vea nuestra ubicacion">
     <meta name= "keywords" content="muebleria, muebles de cocina, alacena, muebles de habitacion, dormitorio juvenil, muebles de cocina barato, mesa cocina, muebles de cocina moderno, repisas para cocina, alacenas para cocina, mueble auxiliar cocina, modulos de cocina, armarios de cocina, repisas de madera, mueble microondas, muebles de madera, mueblerias cerca de mi, la muebleria, despenseros, cocinas de melamina, modulos de cocina baratos, escritorios, aberturas, ventanas, puerta balcon, vidrio entero, vidrio repartido, ventiluz">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap"
       rel="stylesheet"
@@ -19,41 +19,52 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="estilos.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="estilos.css" />
   </head>
 
   <body>
     <header>
-      <div class="logo">
-        <h1>
-          <a href="index.html">acosta<br /><span>Muebleria & Aberturas</span></a>
-        </h1>
-
+      <a href="#nav" class="open"><img src="imagenes/iconos/menu.png" ></a>
+      
         <nav>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="Nosotros.html">Nosotros</a>
-            </li>
-            <li>
-              <a href="Muebles.html">Muebles</a>
-            </li>
-            <li>
-              <a href="Aberturas.html">Aberturas</a>
-            </li>
-            <li>
-              <a href="Contacto.html">Contacto</a>
-            </li>
-          </ul>
-        </nav>
+          <div class="logo">
+            <h1>
+              <a href="index.html"
+                >acosta<br /><span>Muebleria & Aberturas</span></a
+              >
+            </h1>
+          </div>
+
+          
+          <a href="#" class="close"><img src="imagenes/iconos/cancel.png"></a>
+
+          
+            
+            <ul id="nav">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="Nosotros.html">Nosotros</a>
+              </li>
+              <li>
+                <a href="Muebles.html">Muebles</a>
+              </li>
+              <li>
+                <a href="Aberturas.html">Aberturas</a>
+              </li>
+              <li>
+                <a href="Contacto.html">Contacto</a>
+              </li>
+            </ul>
+          
+        </nav>  
       </div>
     </header>
 
@@ -114,7 +125,62 @@
     </main>
 
     <footer>
-      <p>Created By David G.</p>
+      <div class="contenedor-one" >
+        
+        <div class="colum1">
+          <h2>Mas Informacion</h2>
+          <p>En nuestra empresa podras encontrar la variedad de muebles y aberturas que necesites, </br> fabricamos a medida, hacemos entregas en zona sur sin costo, </br> consulte por los valores de envio a otras zonas.</p>
+        </div>
+        
+        <div class="colum2">
+          <h2>Redes Sociales</h2>
+          <ul>
+            <li>
+              <img src="Imagenes/iconos/instagram.png">
+              <a href="https://www.instagram.com/amoblamientos_acosta/" target="_blank">Seguinos en Instagram</a>
+            </li>
+            <li>
+              <img src="Imagenes/iconos/facebook.png">
+              <a href="https://www.facebook.com/Amoblamientos-Hugo-Acosta-249191112696542" target="_blank">Seguinos en Facebook</a>
+            </li>
+            <li>
+              <img src="Imagenes/iconos/twitter.png">
+              <span>Seguinos en Twitter</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="colum3">
+         
+          <h2>Informacion de Contacto</h2>
+         
+          <ul>
+            <li>
+              <img src="Imagenes/iconos/ubicacion.png" class="iconwhite">
+              <a href="https://www.google.com.ar/maps/place/Arist%C3%B3bulo+del+Valle+1753,+B1852+Burzaco,+Provincia+de+Buenos+Aires/@-34.8245234,-58.3762682,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcd4b2838a3829:0xa00e28612c974f0!8m2!3d-34.8245278!4d-58.3740795" target="_blank">Aristobulo del Valle 1753, Burzaco, Provincia de Buenos Aires</a>
+            </li>
+
+            <li>
+              <img src="Imagenes/iconos/whatsapp.png">
+              <a href="https://wa.me/5491165749931" target="_blank">11-6574-9931</a>
+            </li>
+
+            <li>
+              <img src="Imagenes/iconos/gmail.png">
+              <a href="Contacto.html">acostamuebleria.aberturas@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="contenedor-two">
+
+        <div class="derechos">
+          <p>©2020 Todos los derechos reservados | DG</p>
+        </div>
+      </div>
+
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
